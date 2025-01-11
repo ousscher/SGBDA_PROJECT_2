@@ -1,8 +1,11 @@
 # SGBDA_PROJECT_2
 
+-- run the container 
+
 docker-compose up -d
 
 -- give the container some time
+
 
 docker cp ddl.cql cassandra:/tmp/ddl.cql
 docker exec -it cassandra cqlsh -f /tmp/ddl.cql    
