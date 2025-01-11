@@ -1,3 +1,5 @@
+USE health;
+
 -- some pratical examples to test the efficency of our db
 -- Find all patients with a specific blood type
 SELECT patient_info['name'], blood_type 
