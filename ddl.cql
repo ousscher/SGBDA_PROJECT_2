@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS patients (
 -- Medications table to track the medications of a patient 
 CREATE TABLE IF NOT EXISTS patient_medications (
     patient_id UUID,
+    patient_name TEXT, 
     medication_name TEXT,
     dosage TEXT,
     frequency TEXT,
@@ -38,6 +39,7 @@ CREATE TABLE IF NOT EXISTS patient_medications (
 
 CREATE TABLE IF NOT EXISTS patient_medical_history (
     patient_id UUID,
+    patient_name TEXT, 
     chronic_disease TEXT,
     surgeries TEXT,
     family_history TEXT,
